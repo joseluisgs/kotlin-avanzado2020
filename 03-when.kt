@@ -24,13 +24,14 @@ fun main(args: Array<String>) {
 
 // Haría la función de switch
 fun getText(value: A) = when(value) {
-    is B -> value.var2
-    is C -> value.var3
-    else -> "Error"
+  // Preguntamos que clase
+  is B -> value.var2
+  is C -> value.var3
+  else -> "Error"
 }
 
 // Aplicamos el wehen en esta funcion, haría la funcion de if/else  
 fun isEuropean(country: Country) = when(country) {
-    Country.SPAIN, Country.GERMANY -> "Sí"
-    else -> "No"
+  Country.SPAIN, Country.GERMANY -> "Sí"
+  else -> "No"
 }
