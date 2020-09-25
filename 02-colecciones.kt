@@ -136,10 +136,10 @@ fun main(args: Array<String>) {
   
   println("")
   println("--- Partition ---")
-  // Devuelve una lista con los elementos mayores a cero
+  // Devuelve listas que cumplan la condición
   println("Partition: " + (listToApplyAny.partition {
       it > 0
-  }).first)
+  }).first) // Obtenemos la primera
   
   println("")
   println("--- Sort ---")
